@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.curso {
+  background: #e0e0e0;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  pointer-events: none;
+  font-size: 0.9rem;
+}
+
+.curso.activo {
+  opacity: 1;
+  pointer-events: all;
+  background: #ffffff;
+  border: 2px solid #3498db;
+}
+
+.curso.aprobado {
+  background: #2ecc71;
+  color: white;
+  border: none;
+}
